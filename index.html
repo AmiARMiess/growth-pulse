@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GrowthPulse | Data-Driven Marketing Analytics</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Phosphor Icons (Lightweight alternative to FontAwesome) -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i class="ph-fill ph-chart-polar"></i>
+                GrowthPulse
+            </a>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#calculator">ROI Calculator</a></li>
+                <li><a href="#testimonials">Customers</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#" class="btn-text">Log in</a>
+                <a href="#calculator" class="btn-primary">Start Free Trial</a>
+            </div>
+            <button class="mobile-toggle" aria-label="Toggle menu">
+                <i class="ph ph-list"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container hero-container">
+            <div class="hero-content fade-up">
+                <div class="badge-pill">
+                    <span class="pulse-dot"></span>
+                    v2.0 Now Live: AI Predictive Analytics
+                </div>
+                <h1>Turn Raw Data Into <br><span class="gradient-text">Predictable Revenue</span></h1>
+                <p class="hero-subtitle">Stop guessing which campaigns work. GrowthPulse unifies your marketing data into actionable insights that drive 3x faster growth.</p>
+                
+                <div class="hero-form">
+                    <input type="email" placeholder="Enter your work email" required>
+                    <button class="btn-primary">Get Started Free <i class="ph-bold ph-arrow-right"></i></button>
+                </div>
+                <p class="micro-copy">No credit card required • 14-day free trial • Cancel anytime</p>
+                
+                <div class="social-proof">
+                    <div class="avatars">
+                        <img src="https://i.pravatar.cc/100?img=1" alt="User">
+                        <img src="https://i.pravatar.cc/100?img=2" alt="User">
+                        <img src="https://i.pravatar.cc/100?img=3" alt="User">
+                        <img src="https://i.pravatar.cc/100?img=4" alt="User">
+                        <div class="avatar-count">+2k</div>
+                    </div>
+                    <div class="proof-text">
+                        <div class="stars">★★★★★</div>
+                        <span>Trusted by 2,000+ marketers</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-visual fade-up delay-1">
+                <div class="dashboard-card glass">
+                    <div class="card-header">
+                        <div class="dots">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <span>Campaign Performance</span>
+                    </div>
+                    <div class="chart-placeholder">
+                        <div class="bar" style="--h: 40%"></div>
+                        <div class="bar active" style="--h: 75%"></div>
+                        <div class="bar" style="--h: 55%"></div>
+                        <div class="bar" style="--h: 90%"></div>
+                        <div class="bar" style="--h: 65%"></div>
+                    </div>
+                    <div class="metric-row">
+                        <div class="metric">
+                            <span class="label">Revenue</span>
+                            <span class="value">$48,290</span>
+                            <span class="change positive">+12.5%</span>
+                        </div>
+                        <div class="metric">
+                            <span class="label">CAC</span>
+                            <span class="value">$24.50</span>
+                            <span class="change negative">-3.2%</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Floating Elements -->
+                <div class="float-card float-1 glass">
+                    <i class="ph-fill ph-trend-up"></i>
+                    <div>
+                        <span class="fc-label">Conversion Rate</span>
+                        <span class="fc-value">4.8%</span>
+                    </div>
+                </div>
+                <div class="float-card float-2 glass">
+                    <i class="ph-fill ph-users"></i>
+                    <div>
+                        <span class="fc-label">New Leads</span>
+                        <span class="fc-value">+128</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Background Decorations -->
+        <div class="bg-gradient-orb orb-1"></div>
+        <div class="bg-gradient-orb orb-2"></div>
+    </header>
+
+    <!-- Logo Cloud -->
+    <section class="logo-cloud">
+        <div class="container">
+            <p class="cloud-title">POWERING GROWTH FOR TEAMS AT</p>
+            <div class="logos">
+                <span>Stripe</span>
+                <span>Notion</span>
+                <span>Figma</span>
+                <span>Vercel</span>
+                <span>Linear</span>
+                <span>Loom</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Bento Grid -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header text-center fade-up">
+                <h2>Everything You Need To Scale</h2>
+                <p>Replace your fragmented stack with one unified platform designed for modern marketing teams.</p>
+            </div>
+            
+            <div class="bento-grid">
+                <!-- Large Feature -->
+                <div class="bento-item large fade-up">
+                    <div class="bento-icon purple"><i class="ph-duotone ph-brain"></i></div>
+                    <h3>AI-Powered Attribution</h3>
+                    <p>Automatically track every touchpoint across devices and channels. Our ML models assign accurate revenue credit so you know exactly what's working.</p>
+                    <div class="bento-visual attribution-viz">
+                        <div class="path-line"></div>
+                        <div class="node start">Ad</div>
+                        <div class="node mid">Email</div>
+                        <div class="node end">Sale</div>
+                    </div>
+                </div>
+                
+                <!-- Medium Feature -->
+                <div class="bento-item medium fade-up delay-1">
+                    <div class="bento-icon blue"><i class="ph-duotone ph-plugs-connected"></i></div>
+                    <h3>200+ Integrations</h3>
+                    <p>Connect HubSpot, Salesforce, GA4, Meta Ads, and more in minutes. No engineering resources needed.</p>
+                </div>
+                
+                <!-- Medium Feature -->
+                <div class="bento-item medium fade-up delay-2">
+                    <div class="bento-icon green"><i class="ph-duotone ph-shield-check"></i></div>
+                    <h3>SOC2 Compliant</h3>
+                    <p>Enterprise-grade security with SSO, RBAC, and audit logs. Your data never leaves our encrypted infrastructure.</p>
+                </div>
+                
+                <!-- Small Feature -->
+                <div class="bento-item small fade-up">
+                    <div class="bento-icon orange"><i class="ph-duotone ph-lightning"></i></div>
+                    <h3>Real-Time Sync</h3>
+                    <p>Data updates every 60 seconds. Never make decisions on stale numbers again.</p>
+                </div>
+                
+                <!-- Small Feature -->
+                <div class="bento-item small fade-up delay-1">
+                    <div class="bento-icon pink"><i class="ph-duotone ph-file-csv"></i></div>
+                    <h3>Custom Reports</h3>
+                    <p>Build drag-and-drop dashboards tailored to your KPIs. Export to PDF or Slack automatically.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive ROI Calculator -->
+    <section id="calculator" class="calculator-section">
+        <div class="container calc-container">
+            <div class="calc-content fade-up">
+                <h2>Calculate Your Potential ROI</h2>
+                <p>See how much revenue you could unlock by optimizing your current spend.</p>
+                
+                <div class="calc-inputs">
+                    <div class="input-group">
+                        <label>Monthly Ad Spend ($)</label>
+                        <input type="range" id="adSpend" min="1000" max="100000" value="10000" step="1000">
+                        <div class="range-value">$<span id="adSpendVal">10,000</span></div>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label>Current Conversion Rate (%)</label>
+                        <input type="range" id="convRate" min="0.5" max="10" value="2" step="0.1">
+                        <div class="range-value"><span id="convRateVal">2.0</span>%</div>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label>Average Order Value ($)</label>
+                        <input type="range" id="aov" min="20" max="500" value="100" step="10">
+                        <div class="range-value">$<span id="aovVal">100</span></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="calc-results glass fade-up delay-1">
+                <div class="result-card">
+                    <span class="result-label">Current Monthly Revenue</span>
+                    <span class="result-value" id="currentRev">$2,000</span>
+                </div>
+                <div class="result-card highlight">
+                    <span class="result-label">Projected Revenue w/ GrowthPulse</span>
+                    <span class="result-value" id="projectedRev">$3,400</span>
+                    <span class="result-badge">+70% Increase</span>
+                </div>
+                <div class="result-card">
+                    <span class="result-label">Additional Annual Revenue</span>
+                    <span class="result-value green" id="annualGain">$16,800</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header text-center fade-up">
+                <h2>Loved By Growth Teams</h2>
+            </div>
+            <div class="testimonial-grid">
+                <div class="testimonial-card fade-up">
+                    <div class="quote-icon"><i class="ph-fill ph-quotes"></i></div>
+                    <p>"GrowthPulse completely changed how we allocate budget. We cut wasted ad spend by 40% in the first month."</p>
+                    <div class="author">
+                        <img src="https://i.pravatar.cc/100?img=5" alt="Sarah Chen">
+                        <div>
+                            <strong>Sarah Chen</strong>
+                            <span>VP Marketing, TechFlow</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card fade-up delay-1">
+                    <div class="quote-icon"><i class="ph-fill ph-quotes"></i></div>
+                    <p>"The AI attribution model is a game changer. Finally, we can prove marketing's impact to the board."</p>
+                    <div class="author">
+                        <img src="https://i.pravatar.cc/100?img=8" alt="Marcus Johnson">
+                        <div>
+                            <strong>Marcus Johnson</strong>
+                            <span>CMO, ScaleUp Inc</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card fade-up delay-2">
+                    <div class="quote-icon"><i class="ph-fill ph-quotes"></i></div>
+                    <p>"Setup took 15 minutes. The integrations just work. Best analytics tool we've ever used."</p>
+                    <div class="author">
+                        <img src="https://i.pravatar.cc/100?img=9" alt="Elena Rodriguez">
+                        <div>
+                            <strong>Elena Rodriguez</strong>
+                            <span>Growth Lead, NovaBrand</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container cta-container fade-up">
+            <h2>Ready To Accelerate Growth?</h2>
+            <p>Join 2,000+ companies using GrowthPulse to scale smarter.</p>
+            <div class="cta-buttons">
+                <a href="#" class="btn-primary btn-lg">Start Free Trial <i class="ph-bold ph-arrow-right"></i></a>
+                <a href="#" class="btn-secondary btn-lg">Talk to Sales</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <i class="ph-fill ph-chart-polar"></i>
+                    GrowthPulse
+                </a>
+                <p>The all-in-one analytics platform for data-driven marketing teams.</p>
+                <div class="social-links">
+                    <a href="#"><i class="ph-fill ph-twitter-logo"></i></a>
+                    <a href="#"><i class="ph-fill ph-linkedin-logo"></i></a>
+                    <a href="#"><i class="ph-fill ph-github-logo"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Product</h4>
+                <ul>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Integrations</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Changelog</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#">API Reference</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Community</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Legal</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2024 GrowthPulse Inc. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
